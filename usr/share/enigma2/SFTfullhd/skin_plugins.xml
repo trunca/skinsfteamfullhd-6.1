@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin>
+<!-- ***** sfpanel ***** -->
+
+<screen name="extrapanel" position="center,225" size="1300,720" title="Extra Panel">
+<ePixmap pixmap="SFTfullhd/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/mainnsft.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/exitred.png" position="1212,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
+<widget source="key_green" render="Label" position="390,640" size="250,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_yellow" render="Label" position="690,640" size="240,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_blue" render="Label" position="990,640" size="240,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="menu" render="Listbox" enableWrapAround="1" position="20,20" size="820,605" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="SFTfullhd/menu/bg820x55.png" selectionPixmap="SFTfullhd/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
+<convert type="TemplatedMultiContent">
+{"template": [ MultiContentEntryText(pos = (70, 9), size = (710, 35), flags = RT_HALIGN_LEFT, text =0),
+MultiContentEntryPixmapAlphaTest(pos = (10, 7), size = (40, 40), png = 3), 
+],
+"fonts": [gFont("Regular",34)],
+"itemHeight":55
+}
+</convert>
+</widget>
+<widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+</screen>
+<screen name="ConfigExtentions2" position="center,225" size="1300,720" title="sft-panel Menu/Extensionmenu config">
+<ePixmap pixmap="SFTfullhd/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/menuconficam.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/exitred.png" position="1212,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
+<widget source="key_green" render="Label" position="390,640" size="250,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="config" position="20,20" size="820,570" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="SFTfullhd/menu/bg820x35.png" selectionPixmap="SFTfullhd/menu/button820x35.png" transparent="1"/>
+<widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+</screen>
+<screen name="ToolsScreen2" position="center,225" size="1300,720" title="Utilidades de Servicio">
+<ePixmap pixmap="SFTfullhd/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/sertools.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/exitred.png" position="1212,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
+<widget source="menu" render="Listbox" enableWrapAround="1" position="20,20" size="820,605" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="SFTfullhd/menu/bg820x55.png" selectionPixmap="SFTfullhd/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
+<convert type="TemplatedMultiContent">
+{"template": [ MultiContentEntryText(pos = (70, 9), size = (710, 35), flags = RT_HALIGN_LEFT, text =0),
+MultiContentEntryPixmapAlphaTest(pos = (10, 7), size = (40, 40), png = 3), 
+],
+"fonts": [gFont("Regular",34)],
+"itemHeight":55
+}
+</convert>
+</widget>
+<widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+	</screen>
+<screen name="ScriptScreen3" position="center,225" size="1300,720" title="Script Executer">
+  <ePixmap pixmap="SFTfullhd/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/scriptmenu.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/exitred.png" position="1212,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
+<widget source="key_green" render="Label" position="390,640" size="250,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_yellow" render="Label" position="690,640" size="240,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="list" enableWrapAround="1" position="20,20" size="820,605" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="SFTfullhd/menu/bg820x55.png" selectionPixmap="SFTfullhd/menu/sel820x55.png" scrollbarMode="showNever" transparent="1"/>
+<widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+</screen>
+<screen name="NTPScreen" position="center,225" size="1300,720" title="NtpTime Updater">
+<ePixmap pixmap="SFTfullhd/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/menuconficam.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/exitred.png" position="1212,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
+<widget source="key_green" render="Label" position="390,640" size="250,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_yellow" render="Label" position="690,640" size="240,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_blue" render="Label" position="990,640" size="240,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="config" position="20,20" size="820,570" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="SFTfullhd/menu/bg820x35.png" selectionPixmap="SFTfullhd/menu/button820x35.png" transparent="1"/>
+<widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+</screen>
+<screen name="SystemScreen" position="center,225" size="1300,720" title="Utilidades Systema">
+	<ePixmap pixmap="SFTfullhd/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/sistemtools.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/exitred.png" position="1212,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
+<widget source="menu" render="Listbox" enableWrapAround="1" position="20,20" size="820,605" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="SFTfullhd/menu/bg820x55.png" selectionPixmap="SFTfullhd/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
+<convert type="TemplatedMultiContent">
+{"template": [ MultiContentEntryText(pos = (70, 9), size = (710, 35), flags = RT_HALIGN_LEFT, text =0),
+MultiContentEntryPixmapAlphaTest(pos = (10, 7), size = (40, 40), png = 3), 
+],
+"fonts": [gFont("Regular",34)],
+"itemHeight":55
+}
+</convert>
+</widget>
+<widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+	</screen>
+<screen name="multimedia" position="center,225" size="1300,720" title="multimedia">
+	<ePixmap pixmap="SFTfullhd/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/multimediapanel.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/exitred.png" position="1212,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
+<widget source="menu" render="Listbox" enableWrapAround="1" position="20,20" size="820,605" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="SFTfullhd/menu/bg820x55.png" selectionPixmap="SFTfullhd/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
+<convert type="TemplatedMultiContent">
+{"template": [ MultiContentEntryText(pos = (70, 9), size = (710, 35), flags = RT_HALIGN_LEFT, text =0),
+MultiContentEntryPixmapAlphaTest(pos = (10, 7), size = (40, 40), png = 3), 
+],
+"fonts": [gFont("Regular",34)],
+"itemHeight":55
+}
+</convert>
+</widget>
+<widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+	</screen>
+<screen name="get_source" position="center,225" size="1300,720" title="Choice epg.dat source">
+<ePixmap pixmap="SFTfullhd/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/epgmenu.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/exitred.png" position="1212,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
+<widget source="key_green" render="Label" position="390,640" size="250,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_yellow" render="Label" position="690,640" size="240,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_blue" render="Label" position="990,640" size="240,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="menu" render="Listbox" enableWrapAround="1" position="20,20" size="820,605" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="SFTfullhd/menu/bg820x55.png" selectionPixmap="SFTfullhd/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
+<convert type="TemplatedMultiContent">
+{"template": [ MultiContentEntryText(pos = (10, 9), size = (710, 35), flags = RT_HALIGN_LEFT, text =0),
+],
+"fonts": [gFont("Regular",34)],
+"itemHeight":55
+}
+</convert>
+</widget>
+<widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+	</screen>
+<screen name="epgdna" position="center,225" size="1300,720" title="">
+<ePixmap pixmap="SFTfullhd/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/ntpmenu.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/exitred.png" position="1212,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/menu.png" position="225,650" size="65,50" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
+<widget source="key_green" render="Label" position="390,640" size="250,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_yellow" render="Label" position="690,640" size="240,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_blue" render="Label" position="990,640" size="240,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="config" position="20,75" size="820,410" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="SFTfullhd/menu/bg820x35.png" selectionPixmap="SFTfullhd/menu/button820x35.png" transparent="1"/>
+<widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+<widget source="lastupdate" render="Label" position="100,500" zPosition="2" size="810,60" font="Regular;30" halign="center" valign="center"/>
+</screen>
+<screen name="System2Screen" position="center,225" size="1300,720" title="User Tools">
+	<ePixmap pixmap="SFTfullhd/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/usertools.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/exitred.png" position="1212,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
+<widget source="menu" render="Listbox" enableWrapAround="1" position="20,20" size="820,605" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="SFTfullhd/menu/bg820x55.png" selectionPixmap="SFTfullhd/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
+<convert type="TemplatedMultiContent">
+{"template": [ MultiContentEntryText(pos = (70, 9), size = (710, 35), flags = RT_HALIGN_LEFT, text =0),
+MultiContentEntryPixmapAlphaTest(pos = (10, 7), size = (40, 40), png = 3), 
+],
+"fonts": [gFont("Regular",34)],
+"itemHeight":55
+}
+</convert>
+</widget>
+<widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+	</screen>
+<screen name="DDNSScreen" position="center,225" size="1300,720" title="Dynamic DNS">
+	<ePixmap pixmap="SFTfullhd/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/ddnsmenu.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/exitred.png" position="1212,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
+<widget source="key_green" render="Label" position="390,640" size="250,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_yellow" render="Label" position="690,640" size="240,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="config" position="20,20" size="820,3000" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="SFTfullhd/menu/bg820x35.png" selectionPixmap="SFTfullhd/menu/button820x35.png" transparent="1"/>
+<widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+</screen>
+<screen name="DropScreen" position="center,225" size="1300,720" title="Cache Flush">
+	<ePixmap pixmap="SFTfullhd/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/dropmenu.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/exitred.png" position="1212,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
+<widget source="key_green" render="Label" position="390,640" size="250,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_yellow" render="Label" position="690,640" size="240,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="config" position="20,20" size="820,3000" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="SFTfullhd/menu/bg820x35.png" selectionPixmap="SFTfullhd/menu/button820x35.png" transparent="1"/>
+<widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+	<widget source="MemoryLabel" render="Label" position="55,435" size="150,22" font="Regular; 20" halign="right" foregroundColor="#aaaaaa" />
+	<widget source="memTotal" render="Label" position="220,435" zPosition="2" size="450,22" font="Regular;20" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+	<widget source="bufCache" render="Label" position="220,460" zPosition="2" size="450,22" font="Regular;20" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+</screen>
+<screen name="LogManager" position="center,225" size="1300,720" title="Gestion Crash Logs">
+	<ePixmap pixmap="SFTfullhd/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/mainnsft.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/exitred.png" position="1212,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
+<widget source="key_green" render="Label" position="390,640" size="250,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_yellow" render="Label" position="690,640" size="240,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+	<widget name="list" position="10,20" size="820,685" font="Regular;30" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(35)
+		</applet>
+	</screen>
+<screen name="LogManagerViewLog" position="center,225" size="1300,720" title="Gestion Crash Logs">
+	<ePixmap pixmap="SFTfullhd/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/mainnsft.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
+<ePixmap pixmap="SFTfullhd/menu/exitred.png" position="1212,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="SFTfullhd/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
+<widget source="key_green" render="Label" position="390,640" size="250,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_yellow" render="Label" position="690,640" size="240,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+	<widget name="list" position="20,20" size="820,600" font="Regular;30" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
+		
+	</screen>
+</skin>
