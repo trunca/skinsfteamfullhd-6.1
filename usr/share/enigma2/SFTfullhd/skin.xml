@@ -1651,7 +1651,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 </screen>
 <screen name="HarddiskSetup" position="center,225" size="1300,720" title="Harddisk">
 <ePixmap pixmap="SFTfullhd/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
+<ePixmap pixmap="skin_default/mbb.png" position="980,200" size="240,240" alphatest="on" />
 <ePixmap pixmap="SFTfullhd/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="SFTfullhd/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="SFTfullhd/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
@@ -1671,7 +1671,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <ePixmap pixmap="SFTfullhd/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="SFTfullhd/menu/hddd.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="SFTfullhd/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+
 <widget name="wait" position="15,15" size="870,180" font="Regular;30" foregroundColor="button" backgroundColor="bgmain"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
@@ -5372,4 +5372,4 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <convert type="ServiceName">Name</convert>
 </widget>
 </screen>
-</skin>         
+</skin>   
