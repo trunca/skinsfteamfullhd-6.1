@@ -320,8 +320,11 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
     <widget source="global.CurrentTime" render="Label" position="1146,864" size="300,42" font="Replacement; 37" valign="center" halign="left" backgroundColor="bpPodloga" transparent="1" foregroundColor="un21e2e2e2">
       <convert type="ClockToText">Format:%a, %e. %B %Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="698,864" size="83,42" font="Replacement; 37" valign="center" halign="right" backgroundColor="bpPodloga" transparent="1" foregroundColor="un21e2e2e2">
-      <convert type="ClockToText">Format:%H:%M</convert>
+    <widget source="global.CurrentTime" render="Label" position="628,864" size="83,42" font="Replacement; 37" valign="center" halign="right" backgroundColor="bpPodloga" transparent="1" foregroundColor="un21e2e2e2">
+      <convert type="ClockToText">Format:%H</convert>
+    </widget>
+<widget source="global.CurrentTime" render="Label" position="700,864" size="83,42" font="Replacement; 37" valign="center" halign="right" backgroundColor="bpPodloga" transparent="1" foregroundColor="un21e2e2e2">
+      <convert type="ClockToText">Format::%M</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="782,870" size="45,33" font="Replacement; 25" valign="top" halign="left" backgroundColor="bpPodloga" transparent="1" foregroundColor="un21e2e2e2">
       <convert type="ClockToText">Format::%S</convert>
