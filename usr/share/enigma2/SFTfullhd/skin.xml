@@ -107,6 +107,7 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
     <color name="unaaaaac" value="#00aaaaac" />
     <color name="unab5400" value="#00ab5400" />
     <color name="unaf2f4170" value="#af2f4170" />
+    <color name="unc6e0f3" value="#00c6e0f3" />
     <color name="unb5b5b5" value="#00b5b5b5" />
     <color name="unc0c0c0" value="#00c0c0c0" />
     <color name="uncccccc" value="#00cccccc" />
@@ -123,6 +124,7 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
     <color name="unff888888" value="#ff888888" />
     <color name="unffc000" value="#00ffc000" />
     <color name="unffc435" value="#00ffc435" />
+    <color name="unffcc99" value="#00ffcc99" />
     <color name="unffdc64" value="#00ffdc64" />
     <color name="unfff000" value="#00fff000" />
     <color name="white" value="#00ffffff" />
@@ -973,7 +975,7 @@ MultiContentEntryText(pos = (680, 3), size = (155, 37),  font = 1, flags = RT_HA
 <ePixmap pixmap="SFTfullhd/menu/ok.png" position="1332,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="SFTfullhd/menu/menubutton.png" position="1452,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="SFTfullhd/menu/epg.png" position="1572,810" size="48,48" alphatest="blend"/>
-<widget name="list" position="20,70" size="1180,720" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" foregroundColorServiceNotAvail="#999999" colorEventProgressbarSelected="#ffffff" colorServiceDescription="grey" colorServiceDescriptionSelected="#ffffff" serviceItemHeight="45" serviceNumberFont="Regular;26" serviceNameFont="Regular;32" serviceInfoFont="Regular;32" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="SFTfullhd/menu/bg1180x45.png" selectionPixmap="SFTfullhd/menu/button1180x45.png" transparent="1"/>
+<widget name="list" position="15,70" size="1109,720" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#81BEF7" foregroundColorServiceNotAvail="#40FF00" colorEventProgressbarSelected="#ffffff" colorServiceDescription="grey" colorServiceDescriptionSelected="#40FF00" serviceItemHeight="45" serviceNumberFont="Regular;26" serviceNameFont="Regular;32" serviceInfoFont="Regular;32" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="SFTfullhd/menu/bg1180x45.png" selectionPixmap="SFTfullhd/menu/button1180x45.png" transparent="1"/>
 <ePixmap pixmap="SFTfullhd/buttons/red48x48.png" position="40,10" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="SFTfullhd/buttons/green48x48.png" position="340,10" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="SFTfullhd/buttons/yellow48x48.png" position="640,10" size="48,48" alphatest="blend"/>
@@ -982,32 +984,34 @@ MultiContentEntryText(pos = (680, 3), size = (155, 37),  font = 1, flags = RT_HA
 <widget name="key_green" position="405,10" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <widget name="key_yellow" position="705,10" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <widget name="key_blue" position="1005,10" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
-<widget source="ServiceEvent" render="Label" position="1220,25" zPosition="1" size="540,68" font="Regular;30" halign="center" valign="top" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-<convert type="ServiceName">Name</convert>
-</widget>
-<widget source="session.VideoPicture" render="Pig" position="1300,550" size="400,225" zPosition="1" backgroundColor="transparent" transparent="0">
-      <convert type="ServiceName">Reference</convert>
-    </widget>
-<widget alphatest="blend" position="1220,50" render="Picon" size="100,78" source="Service" transparent="1" zPosition="1">
-      <convert type="ServiceName">Reference</convert>
-    </widget>
- <widget source="ServiceEvent" render="Label" position="1200,150" size="80,33" halign="right" font="Regular; 28" foregroundColor="ciel" backgroundColor="bpPodloga" transparent="1" valign="center" zPosition="10">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
- <widget source="ServiceEvent" render="Label" position="1630,150" size="80,33" halign="left" font="Regular; 28" foregroundColor="ciel" backgroundColor="bpPodloga" transparent="1" valign="center" zPosition="10">
-      <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Format:%H:%M</convert>
-</widget>
-<widget source="ServiceEvent" render="Progress" position="1300,160" size="310,10"  zPosition="1" pixmap="SFTfullhd/sfteam/progress.png" borderWidth="1" borderColor="#cccccc">
-<convert type="EventTime">Progress</convert>
-</widget>
-<widget source="ServiceEvent" render="Label" position="1228,203" zPosition="1" size="528,485" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-<convert type="EventName">FullDescription</convert>
-</widget>
 
-
-</screen>
+<widget source="session.VideoPicture" render="Pig" position="1150,200" size="610,333"  zPosition="2" backgroundColor="transparent">
+<convert type="ServiceName">Reference</convert>
+</widget>
+		  <widget source="ServiceEvent" render="Label" position="1210,60" size="90,32" transparent="1" foregroundColor="foreground" font="Regular;28" halign="left">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Progress" position="1300,73" size="360,10" pixmap="SFTfullhd/sfteam/progress1.png" transparent="0" backgroundColor="un33333a" borderWidth="0">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="1650,60" size="90,32" transparent="1" foregroundColor="foreground" font="Regular;28" halign="right">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+  <widget source="ServiceEvent" render="SFTEmptyEpg" position="1170,20" size="720,35" transparent="1" foregroundColor="#FFFF00" noWrap="1" font="Regular;32" halign="left">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="ServiceEvent" render="SFTMaggyRunningText" position="1170,550" size="480,215" transparent="1" font="Regular;30" halign="block" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
+    <convert type="EventName">FullDescription</convert>
+  </widget>
+<widget source="ServiceEvent" render="SFTNextEvents" position="1140,110" size="720,70" noWrap="1" font="Regular;20" foregroundColor="#FF0000" backgroundColor="black" transparent="1" zPosition="22">
+      <convert type="SFTServiceName">Reference</convert>
+    </widget>
+  <widget source="ServiceEvent" render="Label" position="1530,135" size="700,40" font="Regular;34" valign="center" halign="left" transparent="1" zPosition="1">
+    <convert type="TransponderInfo">InRootOnly</convert>
+  </widget>
+	</screen>
 <screen name="ChannelSelectionRadio" position="70,145" size="1780,580" title="">
 <ePixmap pixmap="SFTfullhd/menu/bb2.png" position="18,498" size="1744,74" zPosition="-1" alphatest="on"/>
 <eLabel position="1220,25" size="540,450" zPosition="-1" backgroundColor="bgbutton"/>
