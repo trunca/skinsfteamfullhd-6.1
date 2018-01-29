@@ -1005,7 +1005,7 @@ MultiContentEntryText(pos = (680, 3), size = (155, 37),  font = 1, flags = RT_HA
   <widget source="ServiceEvent" render="SFTMaggyRunningText" position="1170,550" size="480,215" transparent="1" font="Regular;30" halign="block" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
     <convert type="EventName">FullDescription</convert>
   </widget>
-<widget source="ServiceEvent" render="SFTNextEvents" position="1140,110" size="720,70" noWrap="1" font="Regular;20" foregroundColor="#FF0000" backgroundColor="black" transparent="1" zPosition="22">
+<widget source="ServiceEvent" render="SFTNextEvents" position="1140,110" size="720,70" noWrap="1" font="Regular;20" foregroundColor="#FFFFF0" backgroundColor="black" transparent="1" zPosition="22">
       <convert type="SFTServiceName">Reference</convert>
     </widget>
   <widget source="ServiceEvent" render="Label" position="1530,135" size="700,40" font="Regular;34" valign="center" halign="left" transparent="1" zPosition="1">
