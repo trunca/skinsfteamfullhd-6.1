@@ -966,8 +966,8 @@ MultiContentEntryText(pos = (680, 3), size = (155, 37),  font = 1, flags = RT_HA
 </screen>
 <screen name="ChannelSelection" position="center,145" size="1780,880" title="">
 <ePixmap pixmap="SFTfullhd/menu/bb2.png" position="18,798" size="1744,74" zPosition="-1" alphatest="on"/>
-<eLabel position="1220,20" size="540,170" zPosition="-1" backgroundColor="bgbutton"/>
-<eLabel position="1220,195" size="540,600" zPosition="-1" backgroundColor="bgbutton"/>
+<eLabel position="1150,20" size="610,333" zPosition="-1" backgroundColor="bgbutton"/>
+<eLabel position="1150,195" size="610,333" zPosition="-1" backgroundColor="bgbutton"/>
 <ePixmap pixmap="SFTfullhd/menu/arrow1.png" position="40,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="SFTfullhd/menu/arrow_h.png" position="120,810" size="48,48" alphatest="blend"/>
 <eLabel text="SFteam Oficial" position="640,820" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
@@ -1002,10 +1002,10 @@ MultiContentEntryText(pos = (680, 3), size = (155, 37),  font = 1, flags = RT_HA
   <widget source="ServiceEvent" render="SFTEmptyEpg" position="1170,20" size="720,35" transparent="1" foregroundColor="#FFFF00" noWrap="1" font="Regular;32" halign="left">
     <convert type="EventName">Name</convert>
   </widget>
-  <widget source="ServiceEvent" render="SFTMaggyRunningText" position="1170,550" size="480,215" transparent="1" font="Regular;30" halign="block" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
+  <widget source="ServiceEvent" render="SFTMaggyRunningText" position="1200,550" size="480,215" transparent="1" font="Regular;30" halign="block" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
     <convert type="EventName">FullDescription</convert>
   </widget>
-<widget source="ServiceEvent" render="SFTNextEvents" position="1140,110" size="720,70" noWrap="1" font="Regular;20" foregroundColor="#FFFFF0" backgroundColor="black" transparent="1" zPosition="22">
+<widget source="ServiceEvent" render="SFTNextEvents" position="1170,110" size="720,70" noWrap="1" font="Regular;22" foregroundColor="#FFFFF0" backgroundColor="black" transparent="1" zPosition="22">
       <convert type="SFTServiceName">Reference</convert>
     </widget>
   <widget source="ServiceEvent" render="Label" position="1530,135" size="700,40" font="Regular;34" valign="center" halign="left" transparent="1" zPosition="1">
